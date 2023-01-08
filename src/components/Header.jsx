@@ -6,12 +6,64 @@ const Header = () => {
       <div className="container-fluid">
         <NavLink
           className={`${({ isActive }) =>
-            isActive ? "activeLink" : "link"} navbar-brand`}
+            isActive ? "activeLink" : ""} navbar-brand`}
           to="/"
         >
           <i className="fas fa-film mr-2"></i>
           Catalog
         </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i className="fas fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <NavLink
+                className={`${({ isActive }) =>
+                  isActive ? "active" : ""} nav-link nav-link-1`}
+                to="/"
+              >
+                Home
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-2"
+                href="videos.html"
+              >
+                Videos
+              </a>
+            </li>
+            <li class="nav-item">
+              <NavLink
+                className={`${({ isActive }) =>
+                  isActive ? "active" : ""} nav-link nav-link-3`}
+                to="/about"
+              >
+                About
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-4"
+                href="contact.html"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
