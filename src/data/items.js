@@ -34,6 +34,27 @@ const items = [
     img: "img/img-01.jpg",
     id: 5,
   },
+  {
+    title: "Flowers",
+    views: 16008,
+    date: new Date(2021, 5, 3),
+    img: "img/img-10.jpg",
+    id: 5,
+  },
+  {
+    title: "Bus",
+    views: 16008,
+    date: new Date(2021, 5, 3),
+    img: "img/img-07.jpg",
+    id: 5,
+  },
+  {
+    title: "New York",
+    views: 16008,
+    date: new Date(2021, 5, 3),
+    img: "img/img-08.jpg",
+    id: 5,
+  },
 ];
 
 export default items;
