@@ -37,13 +37,15 @@ const Header = () => {
                 Home
               </NavLink>
             </li>
+
             <li class="nav-item">
-              <a
-                class="nav-link nav-link-2"
-                href="videos.html"
+              <NavLink
+                className={`${({ isActive }) =>
+                  isActive ? "active" : ""} nav-link nav-link-2`}
+                to="/videos"
               >
                 Videos
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item">
               <NavLink
@@ -55,12 +57,13 @@ const Header = () => {
               </NavLink>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link nav-link-4"
-                href="contact.html"
+              <NavLink
+                className={`${({ isActive }) =>
+                  isActive ? "active" : ""} nav-link nav-link-4`}
+                to="/contact"
               >
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
