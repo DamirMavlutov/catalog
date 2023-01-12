@@ -12,8 +12,7 @@ const Item = ({ item }) => {
           />
           <figcaption className="d-flex align-items-center justify-content-center">
             <h2>{item.title}</h2>
-            <NavLink to="photo-detail.html">View more</NavLink>
-            <a href="photo-detail.html">View more</a>
+            <NavLink to={"/detail/" + item.id}>View more</NavLink>
           </figcaption>
         </figure>
         <div className="d-flex justify-content-between tm-text-gray">

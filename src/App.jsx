@@ -7,6 +7,7 @@ import NotFound from "./components/NotFound";
 import "./App.css";
 
 import Layout from "./layouts/Layout";
+import DetailPage from "./components/DetailPage";
 function App() {
   return (
     <BrowserRouter>
@@ -31,6 +32,10 @@ function App() {
             <Route
               path="contact"
               element={<Contact />}
+            />
+            <Route
+              path="detail/:id"
+              element={<DetailPage />}
             />
             <Route
               path="*"
