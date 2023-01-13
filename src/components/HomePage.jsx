@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import ItemList from "./ItemList";
 import items from "../data/items";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="container-fluid tm-container-content tm-mt-60">
       <div className="row mb-4">
@@ -70,4 +70,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default HomePage;

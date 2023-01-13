@@ -1,8 +1,8 @@
-const Videos = () => {
+const VideosPage = () => {
   return (
     <>
       <h1>Video</h1>
     </>
   );
 };
-export default Videos;
+export default VideosPage;

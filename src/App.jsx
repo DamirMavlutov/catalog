@@ -1,13 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Videos from "./components/Videos";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import HomePage from "./components/HomePage";
+import VideosPage from "./components/VideosPage";
+import AboutPage from "./components/AboutPage";
+import ContactPage from "./components/ContactPage";
 import NotFound from "./components/NotFound";
 import "./App.css";
 
 import Layout from "./layouts/Layout";
 import DetailPage from "./components/DetailPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -19,19 +20,19 @@ function App() {
           >
             <Route
               index
-              element={<Home />}
+              element={<HomePage />}
             />
             <Route
               path="videos"
-              element={<Videos />}
+              element={<VideosPage />}
             />
             <Route
               path="about"
-              element={<About />}
+              element={<AboutPage />}
             />
             <Route
               path="contact"
-              element={<Contact />}
+              element={<ContactPage />}
             />
             <Route
               path="detail/:id"

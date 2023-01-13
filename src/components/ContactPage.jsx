@@ -1,4 +1,4 @@
-const Contact = () => {
+const ContactPage = () => {
   return (
     <>
       <div class="container-fluid tm-mt-60">
@@ -250,4 +250,4 @@ const Contact = () => {
     </>
   );
 };
-export default Contact;
+export default ContactPage;
