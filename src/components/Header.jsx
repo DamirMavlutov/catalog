@@ -28,8 +28,8 @@ const Header = () => {
             className="collapse navbar-collapse"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+            <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li className="nav-item">
                 <NavLink
                   className={`${({ isActive }) =>
                     isActive ? "active" : ""} nav-link nav-link-1`}
@@ -39,7 +39,7 @@ const Header = () => {
                 </NavLink>
               </li>
 
-              <li class="nav-item">
+              <li className="nav-item">
                 <NavLink
                   className={`${({ isActive }) =>
                     isActive ? "active" : ""} nav-link nav-link-2`}
@@ -48,7 +48,7 @@ const Header = () => {
                   Videos
                 </NavLink>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <NavLink
                   className={`${({ isActive }) =>
                     isActive ? "active" : ""} nav-link nav-link-3`}
@@ -57,7 +57,7 @@ const Header = () => {
                   About
                 </NavLink>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <NavLink
                   className={`${({ isActive }) =>
                     isActive ? "active" : ""} nav-link nav-link-4`}
@@ -73,9 +73,9 @@ const Header = () => {
       <div
         className="tm-hero d-flex justify-content-center align-items-center"
         data-parallax="scroll"
-        data-image-src="img/hero.jpg"
+        data-image-src="/img/hero.jpg"
       >
-        <form class="d-flex tm-search-form">
+        <form className="d-flex tm-search-form">
           <input
             className="form-control tm-search-input"
             type="search"
@@ -86,7 +86,7 @@ const Header = () => {
             className="btn btn-outline-success tm-search-btn"
             type="submit"
           >
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </button>
         </form>
       </div>

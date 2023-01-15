@@ -1,21 +1,23 @@
 const AboutPage = () => {
   return (
     <>
-      <div class="container-fluid tm-mt-60">
-        <div class="row mb-4">
-          <h2 class="col-12 tm-text-primary">About Catalog Website Template</h2>
+      <div className="container-fluid tm-mt-60">
+        <div className="row mb-4">
+          <h2 className="col-12 tm-text-primary">
+            About Catalog Website Template
+          </h2>
         </div>
-        <div class="row tm-mb-74 tm-row-1640">
-          <div class="col-lg-5 col-md-6 col-12 mb-3">
+        <div className="row tm-mb-74 tm-row-1640">
+          <div className="col-lg-5 col-md-6 col-12 mb-3">
             <img
               src="img/about.jpg"
               alt="Image"
-              class="img-fluid"
+              className="img-fluid"
             />
           </div>
-          <div class="col-lg-7 col-md-6 col-12">
-            <div class="tm-about-img-text">
-              <p class="mb-4">
+          <div className="col-lg-7 col-md-6 col-12">
+            <div className="tm-about-img-text">
+              <p className="mb-4">
                 You may support TemplateMo website by making
                 <a
                   href="https://paypal.me/templatemo"
@@ -65,13 +67,13 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div class="row tm-mb-50">
-          <div class="col-md-6 col-12">
-            <div class="tm-about-2-col">
-              <h2 class="tm-text-primary mb-4">
+        <div className="row tm-mb-50">
+          <div className="col-md-6 col-12">
+            <div className="tm-about-2-col">
+              <h2 className="tm-text-primary mb-4">
                 Left side of 2-Column content
               </h2>
-              <p class="mb-4">
+              <p className="mb-4">
                 Pellentesque urna odio, scelerisque eu mauris vitae, vestibulum
                 sodales neque. Ut augue justo, tincidunt nec aliquet ac, cursus
                 vel augue. Suspendisse vel quam imperdiet, sodales tellus sed,
@@ -85,10 +87,12 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          <div class="col-md-6 col-12">
-            <div class="tm-about-2-col">
-              <h2 class="tm-text-primary mb-4">Right-side Title goes here</h2>
-              <p class="mb-4">
+          <div className="col-md-6 col-12">
+            <div className="tm-about-2-col">
+              <h2 className="tm-text-primary mb-4">
+                Right-side Title goes here
+              </h2>
+              <p className="mb-4">
                 Pellentesque urna odio, scelerisque eu mauris vitae, vestibulum
                 sodales neque. Ut augue justo, tincidunt nec aliquet ac, cursus
                 vel augue. Suspendisse vel quam imperdiet, sodales tellus sed,
@@ -104,14 +108,14 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div class="row tm-mb-50">
-          <div class="col-md-4 col-12">
-            <div class="tm-about-3-col">
-              <div class="tm-about-icon-container mb-5">
-                <i class="fas fa-desktop fa-3x tm-text-primary"></i>
+        <div className="row tm-mb-50">
+          <div className="col-md-4 col-12">
+            <div className="tm-about-3-col">
+              <div className="tm-about-icon-container mb-5">
+                <i className="fas fa-desktop fa-3x tm-text-primary"></i>
               </div>
-              <h2 class="tm-text-primary mb-4">Three-column title one</h2>
-              <p class="mb-4">
+              <h2 className="tm-text-primary mb-4">Three-column title one</h2>
+              <p className="mb-4">
                 Integer tristique arcu scelerisque mauris posuere convallis.
                 Fusce egestas ipsum sapien, hendrerit ultricies nisi viverra
                 eget. Vestibulum in tortor eget elit rutrum interdum.
@@ -123,35 +127,37 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-12">
-            <div class="tm-about-3-col">
-              <div class="tm-about-icon-container mb-5">
-                <i class="fas fa-mobile-alt fa-3x tm-text-primary"></i>
+          <div className="col-md-4 col-12">
+            <div className="tm-about-3-col">
+              <div className="tm-about-icon-container mb-5">
+                <i className="fas fa-mobile-alt fa-3x tm-text-primary"></i>
               </div>
-              <h2 class="tm-text-primary mb-4">Title two of three-column</h2>
-              <p class="tm-mb-50">
+              <h2 className="tm-text-primary mb-4">
+                Title two of three-column
+              </h2>
+              <p className="tm-mb-50">
                 Donec nec est tincidunt, rhoncus nulla sit amet, imperdiet
                 augue. Phasellus sodales placerat ipsum ac auctor. Mauris
                 molestie blandit turpis. Mauris ante tellus, feugiat nec metus
                 non, bibendum semper velit.
               </p>
-              <div class="text-center">
+              <div className="text-center">
                 <a
                   href="#"
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                 >
                   Read More
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-12">
-            <div class="tm-about-3-col">
-              <div class="tm-about-icon-container mb-5">
-                <i class="fas fa-photo-video fa-3x tm-text-primary"></i>
+          <div className="col-md-4 col-12">
+            <div className="tm-about-3-col">
+              <div className="tm-about-icon-container mb-5">
+                <i className="fas fa-photo-video fa-3x tm-text-primary"></i>
               </div>
-              <h2 class="tm-text-primary mb-4">Third Title goes here</h2>
-              <p class="mb-4">
+              <h2 className="tm-text-primary mb-4">Third Title goes here</h2>
+              <p className="mb-4">
                 Pellentesque habitant morbi tristique senectus et netus et
                 malesuada fames ac turpis egestas. Donec nec est tincidunt,
                 rhoncus nulla sit amet, imperdiet augue.
