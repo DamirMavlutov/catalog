@@ -1,15 +1,13 @@
 import Item from "./Item";
 
 const RelatedPhotos = ({ items, found }) => {
-  console.log(found);
+  const arr = items.filter((el) => el !== found);
   return (
     <>
       <div className="row tm-mb-90 tm-gallery">
-        {items.map((item, index) => {
-          if (item !== found) {
-            return <Item item={item} />;
-          }
-        })}
+        {arr.map((item, index) => (
+          <Item item={item} />
+        ))}
       </div>
     </>
   );

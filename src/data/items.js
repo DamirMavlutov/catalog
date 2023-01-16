@@ -5,6 +5,7 @@ const items = [
     date: new Date(2023, 2, 5),
     img: "/img/img-03.jpg",
     id: 1,
+    type: "foto",
   },
   {
     title: "Plants",
@@ -12,6 +13,7 @@ const items = [
     date: new Date(2020, 10, 14),
     img: "/img/img-04.jpg",
     id: 2,
+    type: "foto",
   },
   {
     title: "Morning",
@@ -19,6 +21,7 @@ const items = [
     date: new Date(2021, 10, 12),
     img: "/img/img-05.jpg",
     id: 3,
+    type: "foto",
   },
   {
     title: "Pinky",
@@ -26,6 +29,7 @@ const items = [
     date: new Date(2022, 12, 6),
     img: "/img/img-06.jpg",
     id: 4,
+    type: "foto",
   },
   {
     title: "Hangers",
@@ -33,6 +37,7 @@ const items = [
     date: new Date(2021, 5, 3),
     img: "/img/img-01.jpg",
     id: 5,
+    type: "foto",
   },
   {
     title: "Flowers",
@@ -40,6 +45,7 @@ const items = [
     date: new Date(2021, 5, 3),
     img: "/img/img-10.jpg",
     id: 6,
+    type: "foto",
   },
   {
     title: "Bus",
@@ -47,6 +53,7 @@ const items = [
     date: new Date(2021, 5, 3),
     img: "/img/img-07.jpg",
     id: 7,
+    type: "foto",
   },
   {
     title: "New York",
@@ -54,6 +61,7 @@ const items = [
     date: new Date(2021, 5, 3),
     img: "/img/img-08.jpg",
     id: 8,
+    type: "video",
   },
   {
     title: "New York",
@@ -61,6 +69,7 @@ const items = [
     date: new Date(2021, 5, 3),
     img: "/img/img-09.jpg",
     id: 9,
+    type: "video",
   },
 ];
 
