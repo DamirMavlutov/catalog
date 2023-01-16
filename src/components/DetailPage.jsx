@@ -1,7 +1,8 @@
 import items from "../data/items";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import ItemList from "./ItemList";
+import RelatedPhotos from "./RelatedPhotos";
+
 function DetailPage() {
   const navigate = useNavigate();
   const params = useParams();
@@ -119,6 +120,10 @@ function DetailPage() {
           <div className="row mb-4">
             <h2 className="col-12 tm-text-primary">Related Photos</h2>
           </div>
+          <RelatedPhotos
+            items={items}
+            found={found}
+          />
         </div>
       )}
     </>

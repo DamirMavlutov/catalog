@@ -39,21 +39,28 @@ const items = [
     views: 16008,
     date: new Date(2021, 5, 3),
     img: "/img/img-10.jpg",
-    id: 5,
+    id: 6,
   },
   {
     title: "Bus",
     views: 16008,
     date: new Date(2021, 5, 3),
     img: "/img/img-07.jpg",
-    id: 5,
+    id: 7,
   },
   {
     title: "New York",
     views: 16008,
     date: new Date(2021, 5, 3),
     img: "/img/img-08.jpg",
-    id: 5,
+    id: 8,
+  },
+  {
+    title: "New York",
+    views: 16008,
+    date: new Date(2021, 5, 3),
+    img: "/img/img-09.jpg",
+    id: 9,
   },
 ];
 
