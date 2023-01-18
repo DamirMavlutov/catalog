@@ -10,13 +10,24 @@ const HomePage = () => {
   const [fotosCurrentPage, setFotosCurrentPage] = useState(
     fotos.slice(0, countOfPage)
   );
-  const pagesCount = Math.ceil(fotos.length / countOfPage);
+  let pagesCount = Math.ceil(fotos.length / countOfPage);
 
   useEffect(() => {
     const start = currentPage * countOfPage - countOfPage;
     const end = currentPage * countOfPage;
     setFotosCurrentPage(fotos.slice(start, end));
   }, [currentPage]);
+
+  const nextClickHandler = () => {
+    if (currentPage < pagesCount) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+  const previousClickHandler = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
 
   return (
     <div className="container-fluid tm-container-content tm-mt-60">
@@ -30,9 +41,9 @@ const HomePage = () => {
             Page
             <input
               type="text"
-              value="1"
-              size="1"
+              defaultValue="1"
               className="tm-input-paging tm-text-primary"
+              onChange={(event) => setCurrentPage(+event.target.value)}
             />
             of {pagesCount}
           </form>
@@ -44,7 +55,10 @@ const HomePage = () => {
         <div className="col-12 d-flex justify-content-between align-items-center tm-paging-col">
           <a
             href="javascript:void(0);"
-            className="btn btn-primary tm-btn-prev mb-2 disabled"
+            className={`${
+              currentPage === 1 ? "disabled" : ""
+            } btn btn-primary tm-btn-prev mb-2`}
+            onClick={previousClickHandler}
           >
             Previous
           </a>
@@ -63,8 +77,10 @@ const HomePage = () => {
           </div>
           <a
             href="javascript:void(0);"
-            className="btn btn-primary tm-btn-next"
-            onClick={() => (pagesCount = 10)}
+            className={`${
+              currentPage === pagesCount ? "disabled" : ""
+            } btn btn-primary tm-btn-next`}
+            onClick={nextClickHandler}
           >
             Next Page
           </a>
