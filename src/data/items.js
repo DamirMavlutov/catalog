@@ -5,7 +5,7 @@ const items = [
     date: new Date(2023, 2, 5),
     img: "/img/img-03.jpg",
     id: 1,
-    type: "foto",
+    type: "video",
   },
   {
     title: "Plants",
@@ -13,7 +13,7 @@ const items = [
     date: new Date(2020, 10, 14),
     img: "/img/img-04.jpg",
     id: 2,
-    type: "foto",
+    type: "video",
   },
   {
     title: "Morning",
@@ -21,7 +21,7 @@ const items = [
     date: new Date(2021, 10, 12),
     img: "/img/img-05.jpg",
     id: 3,
-    type: "foto",
+    type: "video",
   },
   {
     title: "Pinky",
